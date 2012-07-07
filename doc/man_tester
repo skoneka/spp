@@ -1,0 +1,40 @@
+NAZWA
+      spp - program zarządzający bazą danych
+
+SKŁADNIA
+      spp [ opcje ] ...
+
+OPIS
+     spp jest programem przeznaczonym do zarządzania bazą danych
+     studentów, lektorów i przedmiotów.
+
+OPCJE
+ TRYBY:
+      -b  --build <baza>    - tryb budowania bazy danych
+      -a  --add             - tryb dodawania
+      -r  --rm              - tryb usuwania
+      -l  --show-links      - tryb wyliczania powiązań
+      -c  --cat             - tryb wyliczania
+      -e  --edit            - tryb edytowania pytań
+  FLAGI:
+      -h --help             - wyświetl krótką pomoc
+      -v --verbose          - wyświetlaj więcej informacji
+  OPCJE
+      -t, --type <student|lecturer|topic> - typ rekordu
+      -d, --data <baza>     - baza danych
+      -l, --log <file>      - plik logu
+      --config <file>       - plik konfiguracyjny
+  OPCJE POL REKORDU
+      -i, --id <int>        - id rekordu
+      -N, --name <nazwa>    - imię lub nazwa
+  OPCJE POL REKORDU typu student
+      -I, --index <numer indeksu>
+      -T, --topic <topic1 id,topic2 id,...>
+  OPCJE POL REKORDU typu lecturer (wykładowca)
+      -D, --degree <stopień naukowy>
+      -R, --room <pokój wykładowcy>
+      -Y, --topic-type <typ przedmiotu>
+      -T, --topic <topic1 id,topic2 id,...>
+  OPCJE POL REKORDU typu topic (przedmiot)
+      -A, --date <termin zajęć>
+      -H, --hours <liczba godzin w semestrze>

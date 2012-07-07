@@ -1,0 +1,3 @@
+#!/bin/sh
+xxd -i man_tester > ../src/bin/man_tester.xxd
+pdflatex spp.tex

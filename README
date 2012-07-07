@@ -1,0 +1,12 @@
+Program obsługujący bazę studentów, prowadzących i przedmiotów
+
+Kompilacja:
+    ./configure
+    make
+    make install
+
+Pomoc
+    ./spp --help
+
+Dokumentacja
+    doc/spp.pdf
